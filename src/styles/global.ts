@@ -1,3 +1,5 @@
+"use client";
+
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
@@ -8,14 +10,14 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
         ::-webkit-scrollbar {
             width: 0.45rem;
-    }
-        ::-webkit-scrollbar-track {
-            background: ${({ theme }) => theme.colors["base-shape"]}
-    }
-        ::-webkit-scrollbar-thumb {
-            background: ${({ theme }) => theme.colors["base-red"]};
-            
-    }
+        }
+            ::-webkit-scrollbar-track {
+                background: ${({ theme }) => theme.colors["base-shape"]}
+        }
+            ::-webkit-scrollbar-thumb {
+                background: ${({ theme }) => theme.colors["base-red"]};
+
+        }
     }
     body{
         background: ${({ theme }) => theme.colors["base-black"]};
@@ -33,4 +35,4 @@ export const GlobalStyle = createGlobalStyle`
     a{
         text-decoration: none;
     }
-`
+`;
